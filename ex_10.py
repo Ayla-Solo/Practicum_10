@@ -7,7 +7,7 @@ def number_from_set(a, b):
         b = a
         a = temp
     for i in range(1, len(str(b))):
-        for j in itertools.combinations_with_replacement("13489", i):
+        for j in itertools.combinations_with_replacement("13489", i):# генериует всевозможные комбинации длины 
             if int("".join(j)) > a:
                 print(int("".join(j)))
 
