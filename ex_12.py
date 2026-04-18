@@ -2,8 +2,8 @@ import turtle
 from turtle import *
 w = turtle.Screen()
 
-
-def soleil(n):
+tracer(0)
+def soleil(n): # Цветок
     color('red', 'yellow')
     while True:
         forward(n)
@@ -12,7 +12,7 @@ def soleil(n):
             break
 
 
-def fan(n):
+def fan(n):# арнамент
     color('green', 'yellow')
     for i in range(4):
         left(20)
@@ -21,7 +21,7 @@ def fan(n):
             left(90)
 
 
-def square(n):
+def square(n):# квадрат
     for i in range(4):
         forward(n)
         left(90)
